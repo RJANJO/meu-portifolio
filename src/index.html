@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens Incríveis</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> <!-- CSS do calendário -->
+    <link rel="stylesheet" href="style.css"> <!-- CSS melhorado -->
+</head>
+<body>
+    <div id="header"></div> <!-- Carregaremos o cabeçalho dinamicamente -->
+    <div id="content">
+        <!-- Conteúdo principal aqui -->
+        <main class="container my-5">
+            <section id="destinos">
+                <h2>Destinos em Destaque</h2>
+                <div class="row">
+                    <article class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="rio-de-janeiro.jpg" class="card-img-top" alt="Rio de Janeiro">
+                            <div class="card-body">
+                                <h5 class="card-title">Rio de Janeiro</h5>
+                                <p class="card-text">Cidade Maravilhosa, praias deslumbrantes e paisagens exuberantes.</p>
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#detalhesDestino1">Ver Detalhes</button>
+                                <div id="detalhesDestino1" class="collapse mt-3">
+                                    <h3>Informações</h3>
+                                    <p>Descrição detalhada do Rio de Janeiro, incluindo pontos turísticos, atividades, etc.</p>
+                                    <h3>Datas e Preços</h3>
+                                    <div id="calendarioDestino1"></div> <!-- Calendário será inserido via JavaScript -->
+                                    <select id="formaPagamento1">
+                                        <option value="">Selecione uma forma de pagamento</option>
+                                        <option value="cartao">Cartão de Crédito</option>
+                                        <option value="boleto">Boleto Bancário</option>
+                                        <option value="pix">Pix</option>
+                                    </select>
+                                    <div id="detalhesPagamento1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="fernando-de-noronha.jpg" class="card-img-top" alt="Fernando de Noronha">
+                            <div class="card-body">
+                                <h5 class="card-title">Fernando de Noronha</h5>
+                                <p class="card-text">Paraíso ecológico com praias paradisíacas e vida marinha rica.</p>
+                                <button class="btn btn-primary" data-toggle="collapse" data-target="#detalhesDestino2">Ver Detalhes</button>
+                                <div id="detalhesDestino2" class="collapse mt-3">
+                                    <h3>Informações</h3>
+                                    <p>Descrição detalhada de Fernando de Noronha, incluindo pontos turísticos, atividades, etc.</p>
+                                    <h3>Datas e Preços</h3>
+                                    <div id="calendarioDestino2"></div> <!-- Calendário será inserido via JavaScript -->
+                                        <select id="formaPagamento2">
+                                            <option value="">Selecione uma forma de pagamento</option>
+                                            <option value="cartao">Cartão de Crédito</option>
+                                            <option value="boleto">Boleto Bancário</option>
+                                            <option value="pix">Pix</option>
+                                        </select>
+                                        <div id="detalhesPagamento2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="aside"></div> <!-- Conteúdo do lado, como promoções -->
+    <div id="footer"></div> <!-- Carregaremos o rodapé dinamicamente -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Carrega conteúdo dinâmico -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- JS do calendário -->
+</body>
+</html>

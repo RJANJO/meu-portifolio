@@ -1,0 +1,153 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte mais moderna */
+    line-height: 1.6;
+}
+
+header h1, header nav a {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron {
+    background-image: url("banner-viagens.jpg"); /* Imagem do banner */
+    background-size: cover;
+    background-position: center;
+    color: white;/* Estilos Gerais */
+    body {
+        font-family: 'Roboto', sans-serif; /* Fonte moderna */
+        line-height: 1.6;
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background-color: #007bff;
+    }
+    
+    header h1 {
+        color: #fff;
+    }
+    
+    .navbar-nav .nav-link {
+        color: #fff;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        color: #f8f9fa;
+    }
+    
+    .jumbotron.banner {
+        background: url("banner-viagens.jpg") no-repeat center center / cover;
+        height: 400px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    
+    .jumbotron.banner .btn {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    .card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    /* Formulário de Contato */
+    form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    form .form-control {
+        margin-bottom: 15px;
+    }
+    
+    form .btn {
+        background: #007bff;
+        border: none;
+    }
+    
+    form .btn:hover {
+        background: #0056b3;
+    }
+    
+    /* Rodapé */
+    footer {
+        background-color: #343a40;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .jumbotron.banner {
+            height: 300px;
+        }
+    
+        .card img {
+            height: 150px;
+        }
+    }
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover; /* Ajusta a imagem ao card */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem; /* Ajusta o tamanho do título do banner */
+    }
+
+    .lead {
+        font-size: 1.2rem; /* Ajusta o tamanho do texto do banner */
+    }
+}
+/* Estilos para o calendário flatpickr */
+.flatpickr-calendar {
+    opacity: 1 !important; /* Garante que o calendário esteja totalmente visível */
+}
+
+.flatpickr-day.selected, 
+.flatpickr-day.startRange, 
+.flatpickr-day.endRange,
+.flatpickr-day.inRange {
+    background-color: #007bff !important; /* Cor de fundo para dias selecionados */
+    color: white !important; 
+}
