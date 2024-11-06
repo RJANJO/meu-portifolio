@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+.footer {
+    background-color: #282a35;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    border-top: 1px solid #ffffff;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Alinha os itens ao final do footer */
+    height: auto; /* Define a altura do footer */
+}
+  .footer__desenvolvedor, .footer__copyrigth{
+    height: 9px; /* Define a altura dos elementos filhos */
+}

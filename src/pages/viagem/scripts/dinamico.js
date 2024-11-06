@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Carrega cada parte do HTML e só inicializa os elementos depois que todos foram carregados.
-    loadHTML('header.html', '#header')
-        .then(() => loadHTML('footer.html', '#footer'))
-        .then(() => loadHTML('aside.html', '#aside'))
+    loadHTML('/src/pages/viagem/pages/header.html', '#header')
+        .then(() => loadHTML('/src/pages/viagem/pages/footer.html', '#footer'))
+        .then(() => loadHTML('/src/pages/viagem/pages/aside.html', '#aside'))
         .then(() => {
             // Após todos os componentes serem carregados, inicializar o Flatpickr e os listeners
             inicializarComponentes();

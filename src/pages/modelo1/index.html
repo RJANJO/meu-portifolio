@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo1</title>
+  <link rel="stylesheet" href="/src/pages/modelo1/styles.css">
+</head>
+<body>
+  <!-- Cabeçalho principal -->
+  <header>
+    <!-- Logotipo ou Nome do Site -->
+    <div class="logo">
+      <a href="/">Minha Empresa</a>
+    </div>
+
+    <!-- Navegação Principal -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Perfil do Usuário -->
+    <div class="user-profile">
+      <button id="profile-button" aria-haspopup="true" aria-controls="profile-menu">Usuário</button>
+      <!-- Menu Dropdown do Perfil do Usuário -->
+      <menu id="profile-menu" class="dropdown-menu" role="menu">
+        <li role="menuitem"><a href="#profile">Meu Perfil</a></li>
+        <li role="menuitem"><a href="#settings">Configurações</a></li>
+        <li role="menuitem"><a href="#logout">Sair</a></li>
+      </menu>
+    </div>
+  </header>
+
+  <script>
+    // JavaScript para abrir/fechar menu no mobile
+document.querySelector('#profile-button').addEventListener('click', () => {
+  document.querySelector('.nav-links').classList.toggle('active');
+});
+  </script>
+
+</body>
+</html>

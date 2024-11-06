@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+  }
+  
+  .search-bar {
+    flex: 2;
+  }
+  
+  .user-profile,
+  .shopping-cart {
+    display: flex;
+    align-items: center;
+  }
+  

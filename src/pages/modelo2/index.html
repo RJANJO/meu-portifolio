@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo2</title>
+    <link rel="stylesheet" href="/src/pages/modelo2/style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="/" aria-label="Home">
+            <img src="logo.png" alt="Nome do Site">
+          </a>
+        </div>
+        
+        <!-- Navegação Principal -->
+        <nav>
+          <ul>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/produtos">Produtos</a></li>
+            <li><a href="/categorias">Categorias</a></li>
+            <li><a href="/contato">Contato</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Barra de Busca -->
+        <div class="search-bar">
+          <form action="/search" method="get">
+            <label for="search" class="visually-hidden">Buscar</label>
+            <input type="text" id="search" name="q" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+          </form>
+        </div>
+        
+        <!-- Acesso ao Perfil do Usuário -->
+        <div class="user-profile">
+          <button id="profile-button" aria-haspopup="true" aria-controls="profile-menu">Perfil</button>
+          <menu id="profile-menu" class="dropdown-menu" role="menu">
+            <li role="menuitem"><a href="/meu-perfil">Meu Perfil</a></li>
+            <li role="menuitem"><a href="/configuracoes">Configurações</a></li>
+            <li role="menuitem"><a href="/logout">Sair</a></li>
+          </menu>
+        </div>
+        
+        <!-- Carrinho de Compras -->
+        <div class="shopping-cart">
+          <a href="/carrinho" aria-label="Carrinho">
+            <img src="cart-icon.png" alt="Carrinho">
+          </a>
+        </div>
+      </header>     
+    
+</body>
+</html>
