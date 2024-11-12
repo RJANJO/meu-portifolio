@@ -1,0 +1,22 @@
+<!--header.html-->
+<header class="header">
+    <h1 class="header_h1"><a href="/index.html" target="_self" rel="prev">RJUNGER</a></h1>
+    <form role="search" aria-label="Pesquisar no site" class="header_form">
+        <input type="search" placeholder="Pesquisar..." name="search" aria-label="Campo de pesquisa">
+        <button type="submit">Buscar</button>
+    </form>
+    <nav class="header_nav">
+<!-- Ícone do Modo Claro/escuro -->
+        <span class="modo" id="modoToggle">🌙</span>
+        <ul class="nav_ul_principal">
+            <li><a href="/src/pages/sobre/sobre.html" target="_self" rel="next">Sobre</a></li>
+            <li><a href="/src/pages/contato/contato.html" target="_self" rel="next">Contato</a></li>
+        </ul>        
+        <button id="menuButton" class="menu-button" aria-expanded="false">
+            <img src="menu-icon.png" alt="Menu">
+        </button>
+        <ul id="dropdownMenu" class="nav_ul_menu"></ul>        
+    </nav>
+</header>
+
+<script src="/src/script/linkDinamico.js"></script>

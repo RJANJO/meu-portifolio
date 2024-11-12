@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Carrega cada parte do HTML e só inicializa os elementos depois que todos foram carregados.
-    loadHTML('/src/pages/viagem/pages/header.html', '#header')
+    loadHTML('/src/pages/viagem/pages/header.html', '#header_viagem')
         .then(() => loadHTML('/src/pages/viagem/pages/footer.html', '#footer'))
         .then(() => loadHTML('/src/pages/viagem/pages/aside.html', '#aside'))
         .then(() => {

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Login</title>
+</head>
+<body onload="checkLoginStatus()">
+    <p id="welcomeMessage"></p>
+    
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuário" required />
+        <input type="password" id="password" placeholder="Senha" required />
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Formulário de upload, inicialmente escondido -->
+    <div id="uploadFormContainer" style="display: none;">
+        <form id="uploadForm">
+            <input type="file" id="fileInput" required />
+            <button type="submit">Enviar Arquivo</button>
+        </form>
+        <div id="uploadMessage"></div>
+    </div>
+
+    <script src="exemploLogin/loginForm.js"></script>
+    <script src="exemploLogin/upload.js"></script>
+    <script src="exemploLogin/welcomeMessage.js"></script>
+    <script>
+      function checkLoginStatus() {
+        const loggedIn = localStorage.getItem("loggedIn");
+        if (!loggedIn) {
+          window.location.href = "login.html";  // Se não estiver logado, redireciona
+        }
+      }
+    </script>
+</body>
+</html>

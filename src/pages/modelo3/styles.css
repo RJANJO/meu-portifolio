@@ -1,0 +1,55 @@
+/* Base para o header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+  }
+  
+  .search-bar,
+  .user-profile,
+  .shopping-cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    .nav-links ul {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+  

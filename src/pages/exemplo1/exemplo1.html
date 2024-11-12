@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Semântico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      max-width: 800px;
+      width: 100%;
+    }
+    section {
+      background: #e0f7fa;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    article {
+      background: #ffe0b2;
+      padding: 20px;
+      border-radius: 8px;
+      grid-column: span 2;
+    }
+    aside {
+      background: #c5cae9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <section>
+      <h2>Seção Principal</h2>
+      <p>Este é o conteúdo da seção principal, onde você colocaria informações importantes para o usuário.</p>
+    </section>
+
+    <article>
+      <h3>Artigo Interessante</h3>
+      <p>Este artigo contém informações independentes que podem ser compartilhadas ou reutilizadas fora do contexto da página.</p>
+    </article>
+
+    <aside>
+      <h4>Informações Adicionais</h4>
+      <p>Links ou detalhes extras que complementam o conteúdo principal.</p>
+    </aside>
+  </main>
+
+</body>
+</html>
