@@ -20,8 +20,8 @@ function loadComponent(selector, filePath) {
   
   // Carregar o header e footer em todas as páginas
   document.addEventListener("DOMContentLoaded", () => {
-    loadComponent("header", "/src/components/header.html");
-    loadComponent("footer", "/src/components/footer.html");
-    loadComponent("main", "/src/components/main.html");
+    loadComponent("header", "src/components/header.html");
+    loadComponent("footer", "src/components/footer.html");
+    loadComponent("main", "src/components/main.html");
   });
   
