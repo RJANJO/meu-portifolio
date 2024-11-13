@@ -1,0 +1,39 @@
+<!-- components/header.html -->
+<header class="header">
+    <h1 class="header_h1"><a href="/index.html" target="_self" rel="prev">RJUNGER</a></h1>
+    
+    <!-- Formulário de busca responsivo -->
+    <form role="search" aria-label="Pesquisar no site" class="header_form">
+        <input type="search" placeholder="Pesquisar..." name="search" aria-label="Campo de pesquisa">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Navegação -->
+    <nav class="header_nav">
+        <!-- Ícone do Modo Claro/Escuro -->
+        <span class="modo" id="modoToggle" title="Alternar Modo">🌙</span>
+
+        <ul class="nav_ul_principal">
+            <li><a href="/src/pages/sobre/sobre.html" target="_self" rel="next">Sobre</a></li>
+            <li><a href="/src/pages/contato/contato.html" target="_self" rel="next">Contato</a></li>
+        </ul>        
+
+        <!-- Perfil com menu dropdown -->
+        <div class="profile">
+            <img src="profile-pic.jpg" alt="Foto do Perfil" class="profile-img" id="profileMenuToggle">
+            <div id="profileMenu" class="profile-dropdown">
+                <ul>
+                    <li><a href="#">Meu Perfil</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menu Dropdown -->
+        <button id="menuButton" class="menu-button" aria-expanded="false">
+            <img src="menu-icon.png" alt="Menu">
+        </button>
+        <ul id="dropdownMenu" class="nav_ul_menu"></ul>
+    </nav>
+</header>

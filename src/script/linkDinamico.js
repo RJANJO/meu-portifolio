@@ -13,7 +13,7 @@ async function checkAndAddPage(pageName) {
   for (const path of paths) {
     try {
       // Usando fetch para tentar acessar o arquivo
-      const response = await fetch(path, { method: 'HEAD' });
+      const response = await fetch(path, { method: 'GET' });  // Usando GET para pegar o conteúdo
       if (response.ok) {
         addLinkToMenu(pageName, path);
         return;

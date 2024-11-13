@@ -1,0 +1,11 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar build gerado
+dist/
+
+# Ignorar arquivos de lock (opcional)
+package-lock.json
+
+# Ignorar arquivos de configuração do Vite (opcional)
+.vite/

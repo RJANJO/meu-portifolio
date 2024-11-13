@@ -1,0 +1,60 @@
+/* =========================== 
+   Menu Styles
+   =========================== */
+
+/* Estilos do botão de menu */
+.menu-button {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para o botão de menu ao passar o mouse */
+.menu-button:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos do menu lateral */
+.nav__menu {
+    display: none; /* Esconde o menu por padrão */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-secondary); /* Cor de fundo do menu */
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+/* Exibe o menu quando a classe 'show' for adicionada */
+.nav__menu.show {
+    display: block;
+}
+
+/* =========================== 
+   Profile Menu Styles
+   =========================== */
+
+/* Estilos para o menu de perfil */
+.profile-dropdown {
+    display: none; /* Esconde o menu de perfil por padrão */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-background); /* Cor de fundo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+/* Exibe o menu de perfil quando a classe 'active' for aplicada */
+.profile-dropdown.active {
+    display: block;
+}

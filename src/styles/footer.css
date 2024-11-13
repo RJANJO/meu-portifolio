@@ -1,0 +1,19 @@
+/* =========================== 
+   Footer Styles
+   =========================== */
+   .footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--color-secondary);
+    border-top: 1px solid var(--color-dark);
+}
+
+.footer__links a {
+    color: var(--color-primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+    color: #00c6ff;
+}

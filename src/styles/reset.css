@@ -1,0 +1,18 @@
+/* Reset básico para maior consistência */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis para temas e cores */
+:root {
+    --color-primary: #0a84ff;
+    --color-secondary: #1d1f21;
+    --color-dark: #f1f1f1;
+    --color-light: #333;
+    --bg-gradient: linear-gradient(135deg, #0a84ff, #00c6ff);
+    --font-family: "Segoe UI", Arial, sans-serif;
+}

@@ -1,0 +1,8 @@
+/* Estilos gerais para o corpo */
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    margin: 0;
+    padding: 0;
+}
